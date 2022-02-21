@@ -6,7 +6,6 @@ This is a wesbite where you can do all basic calcualtions.
 
 
 
-![screenshot](./src/img/screen.png)
 
 
 
