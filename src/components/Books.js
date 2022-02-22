@@ -1,21 +1,22 @@
 import React from 'react';
 import './styles/books.css';
+import Form from './Form';
+import BookCard from './BookCard';
 
-const Books = () => (
-  <>
-    <div className="books">
-      <form action="">
-        <input type="text" placeholder="Add title" />
-        <input type="text" placeholder="Add Author" />
-        <select name="category" id="category">
-          <option value="history">History</option>
-          <option value="english">English</option>
-          <option value="economy">Economy</option>
-          <option value="literature">Literature</option>
-        </select>
-      </form>
-    </div>
-  </>
-);
+const Books = () => {
+  const data = {};
+  return (
+    <section className="books">
+      {Object.keys(data).map((key) => (
+        <BookCard
+          key={key}
+          title={data[key][0].title}
+          category={data[key][0].category}
+        />
+      ))}
+      <Form />
+    </section>
+  );
+};
 
 export default Books;

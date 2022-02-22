@@ -1,4 +1,3 @@
-// eslint-disable//
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
@@ -8,29 +7,16 @@ import Categories from './Categories';
 const App = () => (
   <>
     <Router>
+      <NavBar />
       <Routes>
-        <Route
-          path="/"
-          element={(
-            <>
-              <NavBar />
-              <Books />
-            </>
-          )}
-        />
-        <Route
-          path="/Categories"
-          element={(
-            <>
-              <NavBar />
-              <Categories />
-            </>
-          )}
-        />
+        <Route path="/" element={<Books />} />
+        {' '}
+        <Route path="/Categories" element={<Categories />} />
         {' '}
       </Routes>
       {' '}
     </Router>
+    {' '}
   </>
 );
 
