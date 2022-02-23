@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 import './styles/bookCard.css';
 
-const BookCard = ({ id, title, category }) => {
+const BookCard = ({ id, title, author }) => {
   const dispatch = useDispatch();
   const handleDelete = () => {
     dispatch(removeBook({ id }));
@@ -12,9 +12,8 @@ const BookCard = ({ id, title, category }) => {
   return (
     <div className="card">
       <div className="details">
-        <span className="category">{category}</span>
         <h3 className="title">{title}</h3>
-        <p className="author"> suzane collns </p>
+        <p className="author">{author}</p>
         <div className="actions">
           <button type="button"> Comments </button>
           <button type="button" onClick={handleDelete}>
@@ -36,14 +35,13 @@ const BookCard = ({ id, title, category }) => {
         </svg>
         <div className="count">
           <p> 50 % </p>
-
           <span> Completed </span>
         </div>
       </div>
       <div className="chapter">
         <span> CURRENT CHAPTER </span>
-
         <p> Chapter 7 </p>
+
         <button type="button"> UPDATE PROGRESS </button>
       </div>
     </div>
@@ -53,6 +51,6 @@ const BookCard = ({ id, title, category }) => {
 BookCard.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 };
 export default BookCard;

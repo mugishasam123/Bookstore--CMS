@@ -5,7 +5,7 @@ const initialState = [
   {
     id: 'item_1',
     title: 'harry potter',
-    category: 'fiction',
+    author: 'fiction',
   },
 ];
 export const addBook = (payload) => ({

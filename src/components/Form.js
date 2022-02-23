@@ -5,7 +5,7 @@ import { addBook } from '../redux/books/books';
 
 const Form = () => {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('');
+  const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
   const data = useSelector((state) => state.books);
   const handleSubmit = (e) => {
@@ -13,17 +13,16 @@ const Form = () => {
     const newBook = {
       id: `item_${data.length + 1}`,
       title,
-      category,
+      author,
     };
     dispatch(addBook(newBook));
     setTitle('');
-    setCategory('');
+    setAuthor('');
   };
 
   return (
     <section className="form">
       <h3> ADD NEW BOOK </h3>
-
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -32,18 +31,13 @@ const Form = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value="action"> Action </option>
-
-          <option value="comedy"> Comedy </option>
-
-          <option value="horror"> Horror </option>
-
-          <option value="fiction"> Fiction </option>
-
-          <option value="classics"> Classics </option>
-        </select>
-
+        <input
+          type="text"
+          placeholder="Book author"
+          required
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
         <button type="submit"> ADD BOOK </button>
       </form>
     </section>
