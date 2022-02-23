@@ -11,13 +11,15 @@ const Books = () => {
       <div className="book-list">
         {data.map((book) => (
           <BookCard
-            key={book.id}
-            id={book.id}
+            key={book.item_id}
+            id={book.item_id}
             title={book.title}
-            author={book.author}
+            category={book.category}
           />
         ))}
+        {' '}
       </div>
+      {' '}
       <Form />
     </section>
   );
