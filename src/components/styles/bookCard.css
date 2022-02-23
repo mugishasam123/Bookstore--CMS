@@ -1,0 +1,8 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.progress {
+  display: flex;
+}

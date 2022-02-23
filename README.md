@@ -1,63 +1,83 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Bookstore-blue)
 
-# Calculator
+# Bookstore
 
-This is a wesbite where you can do all basic calcualtions.
+> Bookstore is an app that allows you to display a list of added books, add new book and remove a book. It is built using React, Redux, and Styled Components 
+> 
 
+<br/>
 
+# Live Demo
 
+[Live Link](https://sambookstore.netlify.app/)
 
+<br/>
 
-
-This project is calculator.
-
+Additional description about the project and its features.
 ## Built With
-- Javascript
-- HTML
-- CSS
-- react js
 
-## Live Demo
-[heroku](https://math-magicians42.herokuapp.com/)
+- Major languages (JavaScript)
+- Framework/Libraries (React, Bootstrap)
+- Technologies/tools used 
+  
+  ``` bash
+  - create-react-app tool
+  - Webpack(Code Bundlng et al)
+  - Babel (code transpiling)
+  - Jest(for testing)
+  - Git(version control)
+  - ESLint(JavaScript linting)
+  - Stylelint(style linting)
 
-[Netfliy](https://priceless-volhard-9289d9.netlify.app/)
+  ```
+
 
 ## Getting Started
-To get the content of this project locally you need to run this command in your terminal:
-- git clone your `https://github.com/mugishasam123/Math-magicians.git`
-- cd project Math-magicians
 
+To get a local copy up and running follow these simple example steps.
 
-### `npm start`
+### Prerequisites
+ - A text editor(preferably Visual Studio Code)
+### Install
+  -  [Git](https://git-scm.com/downloads)
+  -  [Node](https://nodejs.org/en/download/)
+### Usage
+#### Clone this repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+$ git clone https://github.com/mugishasam123/Bookstore--CMS.git
+$ cd Bookstore--CMS
+```
+#### Run project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+$ npm install
+$ npm start # this will open it in the browser and enable hot reloading
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-
+  <br>
 
 ## Authors
 
-👤 **Mugisha Samuel**
+👤 ** Mugisha Samuel**
 
-- GitHub: [@mugishasamuel](https://github.com/mugishasam123)
-- Twitter: [@mugishasamuel](https://twitter.com/mugishasamuel42/)
+- GitHub: [mugishasamuel](https://github.com/mugishasam123)
 - LinkedIn: [mugishasamuel](https://www.linkedin.com/in/mugisha-samuel-55a905208/)
+
+<br>
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mugishasam123/Bookstore--CMS/issues).
+
+<br>
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
