@@ -37,93 +37,35 @@ const Form = () => {
   };
 
   return (
-    <section className="form">
-      <h3 className="form-title">
-        {' '}
-        ADD NEW BOOK
-        {' '}
-      </h3>
+    <section className="form d-flex">
+      <h3 className="form-title"> ADD NEW BOOK </h3>
       {' '}
-      { ' ' }
-      {' '}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="d-flex">
         <input
           type="text"
           placeholder="Book title"
           required
           value={title}
-          onChange={
-            (e) => setTitle(e.target.value)
-}
+          onChange={(e) => setTitle(e.target.value)}
         />
         {' '}
-        { ' ' }
-        {' '}
-        <select
-          value={category}
-          onChange={
-            (e) => setCategory(e.target.value)
-}
-        >
-          <option value="action">
-            {' '}
-            Action
-            {' '}
-          </option>
+        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+          <option value="action"> Action </option>
           {' '}
-          { ' ' }
+          <option value="comedy"> Comedy </option>
           {' '}
-          <option value="comedy">
-            {' '}
-            Comedy
-            {' '}
-          </option>
+          <option value="horror"> Horror </option>
           {' '}
-          { ' ' }
+          <option value="fiction"> Fiction </option>
           {' '}
-          <option value="horror">
-            {' '}
-            Horror
-            {' '}
-          </option>
+          <option value="classics"> Classics </option>
           {' '}
-          { ' ' }
-          {' '}
-          <option value="fiction">
-            {' '}
-            Fiction
-            {' '}
-          </option>
-          {' '}
-          { ' ' }
-          {' '}
-          <option value="classics">
-            {' '}
-            Classics
-            {' '}
-          </option>
-          {' '}
-          { ' ' }
-          {' '}
-
         </select>
         {' '}
-        { ' ' }
+        <button type="submit"> ADD BOOK </button>
         {' '}
-        <button type="submit">
-          {' '}
-          ADD BOOK
-          {' '}
-        </button>
-        {' '}
-        { ' ' }
-        {' '}
-
       </form>
       {' '}
-      { ' ' }
-      {' '}
-
     </section>
   );
 };

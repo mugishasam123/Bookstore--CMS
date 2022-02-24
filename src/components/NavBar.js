@@ -4,10 +4,10 @@ import { ImUser } from 'react-icons/im';
 import './styles/navBar.css';
 
 const NavBar = () => (
-  <div className="navbar">
-    <div className="left">
+  <div className="navbar d-flex">
+    <div className="left  d-flex">
       <h1 className="Bookstore-CMS">Bookstore CMS</h1>
-      <ul className="nav-links">
+      <ul className="nav-links d-flex">
         <li>
           <NavLink to="/" className="nav-link">
             Books

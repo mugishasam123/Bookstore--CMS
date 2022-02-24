@@ -1,44 +1,39 @@
 .navbar {
-  height: 5.938rem;
-  display: flex;
-  align-items: center;
-  padding: 20px 70px 20px 40px;
-  justify-content: space-between;
-  background-color: white;
+    height: 5.938rem;
+    align-items: center;
+    padding: 20px 70px 20px 40px;
+    justify-content: space-between;
+    background-color: white;
 }
 
 ul {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
+    list-style-type: none;
+    gap: 30px;
 }
 
 li a {
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 100;
-  opacity: 0.5;
-  letter-spacing: 1.9px;
+    text-decoration: none;
+    font-family: var(--font-1);
+    font-size: 18px;
+    letter-spacing: 1.9px;
 }
 
 .Bookstore-CMS {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.875rem;
-  color: #0290ff;
+    font-family: var(--font-1);
+    font-size: 1.875rem;
+    color: #0290ff;
 }
 
 .left {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .panel-bg {
-  width: 2.813rem;
-  height: 2.813rem;
-  padding: 0.875rem;
-  border: solid 1px grey;
-  border-radius: 50%;
+    width: 2.813rem;
+    height: 2.813rem;
+    padding: 0.875rem;
+    border: solid 1px grey;
+    border-radius: 50%;
 }

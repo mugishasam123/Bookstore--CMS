@@ -7,9 +7,8 @@ import './styles/books.css';
 const Books = () => {
   const data = useSelector((state) => state.books);
   return (
-    <section className="books">
-      <div className="book-list">
-
+    <section className="books d-flex">
+      <div className="book-list d-flex">
         {data.map((book) => (
           <BookCard
             key={book.item_id}
@@ -18,7 +17,9 @@ const Books = () => {
             category={book.category}
           />
         ))}
+        {' '}
       </div>
+      {' '}
       <hr />
       <Form />
     </section>

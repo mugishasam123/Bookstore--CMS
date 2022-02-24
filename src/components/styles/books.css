@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&family=Montserrat:wght@700&family=Poppins:ital,wght@1,200;1,700&display=swap');
-
 body {
   background-color: rgba(231, 228, 228, 0.966);
 }
 
 .books {
-  display: flex;
   flex-direction: column;
   gap: 60px;
   padding: 30px 110px 200px 110px;
 }
 
 .book-list {
-  display: flex;
   flex-direction: column;
   gap: 40px;
 }

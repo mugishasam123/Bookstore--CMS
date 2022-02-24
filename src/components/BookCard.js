@@ -26,55 +26,77 @@ const BookCard = ({ id, title, category }) => {
     dispatch(removeBook({ id }));
   };
   return (
-    <div className="card">
-      <div className="details">
-        <div className="book-details">
-          <span className="category">{category}</span>
-
-          <h3 className="title">{title}</h3>
-
+    <div className="card d-flex">
+      <div className="details d-flex">
+        <div className="book-details d-flex">
+          <span className="category">
+            {' '}
+            {category}
+            {' '}
+          </span>
+          <h3 className="title">
+            {' '}
+            {title}
+            {' '}
+          </h3>
           <p className="author"> Jk rowling </p>
+          {' '}
         </div>
-        <div className="actions">
+        {' '}
+        <div className="actions d-flex">
           <button type="button"> Comments </button>
-
           <button type="button" onClick={handleDelete}>
             Remove
+            {' '}
           </button>
-
           <button type="button"> Edit </button>
+          {' '}
         </div>
+        {' '}
       </div>
+      {' '}
       <div className="progress">
-        <div className="count">
-          <div style={{ width: 100, height: 100 }}>
+        <div className="count d-flex">
+          <div style={{ width: 80, height: 80 }}>
             <CircularProgressbar value={percentage} maxValue={100} />
+            {' '}
           </div>
+          {' '}
           <div>
             <p className="percentage">
+              {' '}
               {percentage}
+              {' '}
               %
             </p>
-            <span> Completed </span>
+            {' '}
+            <span className="completed"> Completed </span>
+            {' '}
           </div>
+          {' '}
         </div>
+        {' '}
       </div>
+      {' '}
       <hr style={{ width: '1px', height: '70px', display: ' inline-block' }} />
-      <div className="chapter">
-        <div className="chapter-details">
+      {' '}
+      <div className="chapter d-flex">
+        <div className="chapter-details d-flex">
           <span className="current-chapter"> CURRENT CHAPTER </span>
-
-          <p> Chapter 7 </p>
+          <p className="chapter-number"> Chapter 7 </p>
+          {' '}
         </div>
-
         <button
           type="button"
           className="update-progress"
           onClick={handleProgress}
         >
           UPDATE PROGRESS
+          {' '}
         </button>
+        {' '}
       </div>
+      {' '}
     </div>
   );
 };

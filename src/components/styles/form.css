@@ -1,17 +1,16 @@
 .form {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 form {
-  display: flex;
   gap: 20px;
 }
 
 .form-title {
   font-size: 1.17rem;
   color: rgb(136, 136, 136);
+  font-family: var(--font-1);
 }
 
 form > input {
@@ -19,6 +18,10 @@ form > input {
   border: none;
   padding: 16px;
   font-size: 17px;
+}
+
+form > input:focus {
+  outline: 1px solid blue;
 }
 
 form > select {
@@ -34,6 +37,7 @@ form > button {
   padding: 16px;
   color: white;
   background-color: #0290ff;
+  font-family: var(--font-2);
 }
 
 form > input:focus-visible {

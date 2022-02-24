@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&family=Montserrat:wght@700&family=Poppins:ital,wght@1,200;1,700&display=swap');
-
 .card {
-  display: flex;
   background-color: #fff;
   align-items: center;
   padding: 28px 40px 38px 0;
@@ -11,13 +8,16 @@
 }
 
 .category {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-1);
   opacity: 0.5;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .title {
   font-size: 26px;
+  font-family: var(--font-2);
+  opacity: 0.79;
 }
 
 .update-progress {
@@ -28,22 +28,30 @@
   background-color: #0290ff;
   border: none;
   color: white;
+  font-family: var(--font-2);
 }
 
 .percentage {
   font-size: 2rem;
+  font-family: var(--font-1);
 }
 
 .chapter-details > p {
   font-size: 19px;
 }
 
+.chapter-number {
+  font-family: var(--font-2);
+}
+
 .count > span,
-.current-chapter {
+.current-chapter,
+.completed {
   color: grey;
   font-size: 18px;
   line-height: normal;
   letter-spacing: normal;
+  font-family: var(--font-2);
 }
 
 button:hover {
@@ -53,6 +61,7 @@ button:hover {
 .actions > button {
   border: none;
   background: none;
+  font-family: var(--font-2);
 }
 
 .actions > button,
@@ -62,36 +71,30 @@ button:hover {
 }
 
 .book-details {
-  display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
 .details {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .count {
-  display: flex;
   align-items: center;
   gap: 13px;
 }
 
 .actions {
-  display: flex;
   gap: 30px;
 }
 
 .chapter {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .chapter-details {
-  display: flex;
   flex-direction: column;
   gap: 6px;
 }
