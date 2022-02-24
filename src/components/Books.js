@@ -9,6 +9,7 @@ const Books = () => {
   return (
     <section className="books">
       <div className="book-list">
+
         {data.map((book) => (
           <BookCard
             key={book.item_id}
@@ -17,9 +18,8 @@ const Books = () => {
             category={book.category}
           />
         ))}
-        {' '}
       </div>
-      {' '}
+      <hr />
       <Form />
     </section>
   );

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../redux/books/books';
+import './styles/form.css';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -37,29 +38,92 @@ const Form = () => {
 
   return (
     <section className="form">
-      <h3> ADD NEW BOOK </h3>
+      <h3 className="form-title">
+        {' '}
+        ADD NEW BOOK
+        {' '}
+      </h3>
+      {' '}
+      { ' ' }
+      {' '}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Book title"
           required
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={
+            (e) => setTitle(e.target.value)
+}
         />
-        <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value="action"> Action </option>
+        {' '}
+        { ' ' }
+        {' '}
+        <select
+          value={category}
+          onChange={
+            (e) => setCategory(e.target.value)
+}
+        >
+          <option value="action">
+            {' '}
+            Action
+            {' '}
+          </option>
+          {' '}
+          { ' ' }
+          {' '}
+          <option value="comedy">
+            {' '}
+            Comedy
+            {' '}
+          </option>
+          {' '}
+          { ' ' }
+          {' '}
+          <option value="horror">
+            {' '}
+            Horror
+            {' '}
+          </option>
+          {' '}
+          { ' ' }
+          {' '}
+          <option value="fiction">
+            {' '}
+            Fiction
+            {' '}
+          </option>
+          {' '}
+          { ' ' }
+          {' '}
+          <option value="classics">
+            {' '}
+            Classics
+            {' '}
+          </option>
+          {' '}
+          { ' ' }
+          {' '}
 
-          <option value="comedy"> Comedy </option>
-
-          <option value="horror"> Horror </option>
-
-          <option value="fiction"> Fiction </option>
-
-          <option value="classics"> Classics </option>
         </select>
+        {' '}
+        { ' ' }
+        {' '}
+        <button type="submit">
+          {' '}
+          ADD BOOK
+          {' '}
+        </button>
+        {' '}
+        { ' ' }
+        {' '}
 
-        <button type="submit"> ADD BOOK </button>
       </form>
+      {' '}
+      { ' ' }
+      {' '}
+
     </section>
   );
 };

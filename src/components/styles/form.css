@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+.form-title {
+  font-size: 1.17rem;
+  color: rgb(136, 136, 136);
+}
+
+form > input {
+  width: 50%;
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+}
+
+form > select {
+  width: 30%;
+  border: none;
+  padding: 16px;
+  color: grey;
+}
+
+form > button {
+  width: 20%;
+  border: none;
+  padding: 16px;
+  color: white;
+  background-color: #0290ff;
+}
+
+form > input:focus-visible {
+  border: 1px solid blue;
+}
