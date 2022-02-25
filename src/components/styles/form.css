@@ -1,0 +1,45 @@
+.form {
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  gap: 20px;
+}
+
+.form-title {
+  font-size: 1.17rem;
+  color: rgb(136, 136, 136);
+  font-family: var(--font-1);
+}
+
+form > input {
+  width: 50%;
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+}
+
+form > input:focus {
+  outline: 1px solid blue;
+}
+
+form > select {
+  width: 30%;
+  border: none;
+  padding: 16px;
+  color: grey;
+}
+
+form > button {
+  width: 20%;
+  border: none;
+  padding: 16px;
+  color: white;
+  background-color: #0290ff;
+  font-family: var(--font-2);
+}
+
+form > input:focus-visible {
+  border: 1px solid blue;
+}

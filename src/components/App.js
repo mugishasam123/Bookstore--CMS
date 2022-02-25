@@ -12,19 +12,38 @@ const App = () => {
     dispatch(fetchData());
   }, []);
   return (
-    <>
+    <
+        >
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Books />} />
+          <Route
+            path="/"
+            element={<Books />}
+          />
           {' '}
-          <Route path="/Categories" element={<Categories />} />
+          { ' ' }
           {' '}
+          <Route
+            path="/Categories"
+            element={<Categories />}
+          />
+          {' '}
+          { ' ' }
+          {' '}
+
         </Routes>
         {' '}
+        { ' ' }
+        {' '}
+
       </Router>
       {' '}
-    </>
+      { ' ' }
+      {' '}
+
+    <
+        />
   );
 };
 
